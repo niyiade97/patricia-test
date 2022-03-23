@@ -1,0 +1,22 @@
+.wallet-type-logo{
+    width: 40px;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.dark{
+    color: white;
+    background: #006156;
+}
+.normal{
+    background: #DEF5F2;
+    color: #006156;
+}
+@media only screen and (max-width: 700px) {
+    .wallet-type-logo{
+        width:30px;
+        height:30px;
+    }
+}

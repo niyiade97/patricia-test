@@ -1,0 +1,53 @@
+.payment-option-container{
+    width: 100%;
+    border-radius: 24px;
+    border: 2px solid #EFF2F7;
+    overflow: auto;
+}
+.option-container{
+    display: flex;
+   
+}
+.payment-option{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    cursor: pointer;
+    padding: 30px 0px;
+    text-decoration: none;
+    color: #006156;
+}
+.isActive{
+    background: #EFF2F7;
+    color: #9DA8B6;
+}
+.deposit-option{
+    border-top-left-radius: 24px;
+}
+.transfer-option{
+    border-top-right-radius: 24px;
+}
+.option-container div:hover{
+    background: #EFF2F7;
+}
+.option-text-container{
+    text-align: center;
+    padding: 30px 20px 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #444854;
+}
+.payment-btn-wrapper{
+    width: 95%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1300px) {
+    .option-text-container{
+        font-size: 16px;
+    }
+    .payment-option{
+        padding: 20px 0px;
+    }
+}

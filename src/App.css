@@ -1,6 +1,212 @@
-body{
-  margin: 0px;
-  padding: 0px;
+@font-face {
+  font-family: 'gilroylight';
+  src: url('./assets/fonts/light/gilroy-light-webfont.woff2') format('woff2'),
+       url('./assets/fonts/light/gilroy-light-webfont.woff') format('woff');
+  font-weight:bold;
+
+}
+::-webkit-scrollbar {
+  max-height: 4px;              /* height of horizontal scrollbar ← You're missing this */
+  width: 2px;               /* width of vertical scrollbar */
+  border: 1px solid white;
+  /* background-color:#006156; */
+  display: none;
 }
 
+body{
+  padding: 0px;
+  max-width:1400px;
+  margin: auto;
+  box-sizing: border-box;
+  font-family: 'gilroylight', sans-serif;
+}
 
+/* dashboard view */
+.dashboard-body-wrapper{
+  width: 60%;
+  padding: 0px 30px 20px;
+  border-right: 2px solid #EFF2F7;
+  overflow: auto;
+}
+.funding-type-wrapper{
+  width: 40%;
+  padding: 30px 30px 20px;
+  overflow: auto;
+}
+
+/* dashboard stat */
+.stat-container{
+  width: 100%;
+  background: #006156;
+  height: 250px;
+  border-radius: 24px;
+  display: flex;
+  position: relative;
+  z-index: 3;
+  font-family: 'Montserrat', sans-serif;
+}
+.stat-amount-container{
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  width:45%;
+  height: 100%;
+  background-image: url("../src//assets/images/statBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.stat-container-line{
+  margin: 25px 0px;
+}
+.stat-line{
+  border-left: 2px solid #388379;
+  height: 100%;
+}
+
+.stat-amount-header{
+  font-family: 'gilroylight', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #63BDAF;
+  margin: 0px;
+}
+.stat-amount{
+  font-family: 'Montserrat', sans-serif;;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0px;
+  padding: 10px 0px 5px;
+}
+.stat-label{
+  font-weight: 600;
+  font-size: 14px;
+  color: #C8E2DE;
+  margin: 0px;
+}
+.stat-yearly-container{
+  display: flex;
+  width:55%;
+  height: 100%;
+}
+.stat-amount-flow{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  width: 20%;
+}
+.stat-amount-flow p{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #63BDAF;
+}
+.stat-amount-flow h1{
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: #C8E2DE;
+}
+.stat-graph-container{
+  width: 80%;
+}
+.stat-graph-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.graph-img{
+  object-fit: cover;
+}
+.stat-monthly-container{
+  display: flex;
+  align-items: center;
+  height: 20%;
+}
+.stat-month{
+  color: #44A798;
+  text-align: center;
+  width:25%;
+}
+/* withdrawal options */
+.withdrawal-options{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.withdrawal-options-wrapper{
+  width: 48%;
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (max-width: 1300px) {
+  /* dashboard stat */
+  .stat-amount-flow {
+    display: none;
+  }
+  .stat-graph-container{
+    width: 100%;
+  }
+  .stat-amount{
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .funding-type-wrapper{
+    display: none;
+  }
+  .dashboard-body{
+    width:80%;
+    margin-left: -20%;
+  }
+  .dashboard-body-wrapper{
+    width: 100%;
+  }
+   /* dashboard stat */
+  .stat-amount-flow{
+    display: flex;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .stat-graph-wrapper {
+    width:100%
+  }
+  .transaction-table{
+    font-size: 12px;
+  }
+  .stat-graph-container{
+    display: none;
+  }
+  .stat-yearly-container {
+    width: 20%;
+    padding-left: 10px;
+  }
+  .stat-amount-container{
+    width: 80%;
+  }
+  .stat-amount-flow {
+    display: flex;
+    width: 100%;
+  }
+  .stat-container{
+    height: 200px;
+  }
+} 
+  @media only screen and (max-width: 550px) {
+  .stat-container{
+    height: 150px;
+  }
+  .stat-amount-flow p{
+      font-size: 10px;
+  }
+  .stat-yearly-container{
+    display: none;
+  }
+  .stat-amount-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,44 @@
+.header-wrapper{
+    height: 150px;
+    position: sticky;
+    top:0;
+    z-index: 5;
+    background: #FFFFFF;
+}
+.wallet-type-wrapper{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.wallet-type-logo{
+    width: 40px;
+    height:40px;
+    background-color: #006156;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.wallet-text-wrapper{
+    padding-left:10px;
+}
+.dropdown-wrapper{
+    color: #C0CCDA;
+    left: 8px;
+    font-size: 15px;
+    position: relative;
+    top: 5px;
+}
+.wallet-type{
+    font-size: 22px;
+    font-weight: 400;
+    color: #444854;
+    display: flex;
+    margin: 0px;
+}
+.wallet-description{
+    font-size: 14px;
+    font-weight: 700;
+    color: #9DA8B6;
+    margin: 0px
+}

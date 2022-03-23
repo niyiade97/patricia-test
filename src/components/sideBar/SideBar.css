@@ -6,14 +6,21 @@
     padding-left: 50px;
     position: relative;
 }
-.sidebar-logo{
-    width: 150px;
-    height: 30px;
+.logo{
     object-fit: contain;
     cursor: pointer;
     position: absolute;
     top:30px;
     left: 50px;
+}
+.sidebar-logo{
+    width: 120px;
+    height: 30px;
+}
+.mobile-logo{
+    width: 40px;
+    height: 40px;
+    display: none;
 }
 .nav-wrapper{
     height: calc(100vh - 150px);
@@ -29,22 +36,29 @@
     margin: 0px;
 }
 .nav-li{
-    padding: 15px 0px 15px 50px;
     list-style-type: none;
+    margin-right:20px;
+    width: 70%;
+}
+.nav-link{
+    color: #979AA5;
+    width: 100%;
+    padding: 15px 0px 15px 50px;
     display: flex;
     align-items: center;
+    text-decoration: none;
     cursor: pointer;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    margin-right:20px;
-    color: #979AA5;
-    width: 70%;
 }
 .nav-li-help{
     position: absolute;
-    bottom: 40px;
+    bottom: 10px;
 }
-.nav-li:hover{
+.nav-link:hover{
+    color: #006156;
+}
+.active{
     background-color:#FFEEA7;
     color: #006156;
 }
@@ -57,4 +71,38 @@
     font-size: 16px;
     padding-left: 15px;
     margin: 0px;
+}
+.dashboard-body{
+    width: 85%;
+}
+
+@media only screen and (max-width: 1300px) {
+    .nav-link{
+        padding: 15px 10px 15px 50px;
+    }
+}
+@media only screen and (max-width: 900px) {
+  .nav-text{
+      font-size: 14px;
+  }
+  
+  .sidebar-logo{
+      display: none;
+  }
+  .logo{
+      left: 13px;
+      top: 25px;
+  }
+  .mobile-logo{
+      display: block;
+  }
+  .nav-logo-wrapper{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+  }
+  .nav-text{
+      display: none;
+  }
 }

@@ -1,0 +1,90 @@
+.transaction-inner-container{
+    border-radius: 24px;
+    border: 2px solid #EFF2F7;
+    padding: 20px 0px;
+    overflow: auto;
+
+}
+.transaction-header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+.transaction-header-text{
+    font-weight: 400;
+    font-size: 16px;
+    color: #9DA8B6;
+}
+.transaction-table-wrapper{
+    min-width: 500px;
+}
+.transaction-table{
+    overflow: auto;
+    max-height: 400px;
+}
+.search-transaction-wrapper{
+    display: flex;
+    align-items: center;
+}
+.search-transaction-date{
+    border-style: none;
+    background: #F9FAFC;
+    border-radius: 8px;
+    padding: 5px;
+    outline: none;
+}
+.search-transaction-date:focus{
+    border: 2px solid #44A798;
+}
+
+.transaction-download{
+    color: #C0CCDA;
+    font-size: 24px;
+    padding-left: 5px;
+}
+.transaction-wrapper{
+    display: flex;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+.transaction-wrapper:hover{
+    box-shadow: 0px 4px 36px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+.transaction-purpose{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width:40%;
+}
+.transaction-purpose p{
+    padding-left: 20px;
+    color:#575A65;
+}
+.transaction{
+    width: 25%;
+    color: #9DA8B6;
+}
+.transaction-status{
+    width: 10%;
+    text-align: right;
+}
+.failed{
+    color:#CC4945;
+}
+.success{
+    color:#44A798 ;
+}
+.pending{
+    color: #FFCE00;
+}
+@media only screen and (max-width: 900px) {
+    .transaction-wrapper{
+        padding: 10px;
+    }
+    .transaction-header-container{
+        padding: 10px;
+    }
+}

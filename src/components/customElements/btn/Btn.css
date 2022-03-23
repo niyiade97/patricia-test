@@ -1,0 +1,96 @@
+.custom-btn-wrapper{
+    border: 2px solid #EFF2F7;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    cursor: pointer;
+    z-index: 3;
+    position: relative;
+    color: #444854;
+}
+.custom-btn-wrapper:hover{
+    transform: scale(1.01);
+    color: #388379;
+}
+.custom-text-wrapper{
+    display: flex;
+    align-items: center;
+}
+.custom-btn-wrapper i{
+    font-size: 30px;
+    color: #388379;
+}
+.custom-icon-wrapper{
+    background-color: white;
+    padding: 8px;
+    border-radius: 8px;
+}
+.custom-text-wrapper p{
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0px;
+}
+.shadow1{
+    border-radius: 24px;
+    background: #F9FAFC;
+    height:50px;
+    width: 95%;
+    margin: auto;
+    position: absolute;
+    right:0px;
+    left:0px;
+    bottom: -5px;
+    z-index: 2;
+}
+.shadow2{
+    background: #E5E9F2;
+    border-radius: 24px;
+    height:50px;
+    width: 90%;
+    margin: auto;
+    position: absolute;
+    right:0px;
+    left:0px;
+    bottom: -10px;
+    z-index: 1;
+}
+.deposit-btn{
+    background: #FFFFFF;
+    border: 1px solid #F9FAFC;
+}
+.withdrawal-btn{
+    background: #FFFFFF;    
+    border: 1px solid #EFF2F7;
+    box-shadow: 0px 4px 36px rgba(0, 0, 0, 0.05);
+}
+.custom-btn{
+    background: #DEF5F2;
+    color: #006156;
+    border-style: none;
+}
+
+@media only screen and (max-width: 1300px) {
+    .custom-text-wrapper p{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .custom-text-wrapper p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .withdrawal-options{
+        display: block;
+    }
+    .withdrawal-options-wrapper{
+        width: 100%;
+    }
+    .custom-btn-wrapper {
+        padding: 10px 20px;
+    }
+}

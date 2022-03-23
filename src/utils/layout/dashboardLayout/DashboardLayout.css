@@ -1,6 +1,57 @@
+.dashboard-container{
+    display: flex;
+    position: relative;
+    padding: 20px 0px;
+}
 .sidebar-container{
     width: 15%;
+    position: fixed;
+    top:0;
+    z-index: 1;
 }
 .dashboard-body{
-    width: 80%;
+    margin-left: 15%;
+    display: flex;
+    width: 85%;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 1100px) {
+    .sidebar-container{
+        width: 20%;
+    }
+    .dashboard-body{
+        width:80%;
+        margin-left: 20%;
+      }
+    .dashboard-body-wrapper {
+        width: 90%;
+        border-style: none;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 900px) {
+.sidebar-container{
+    width: 60px; 
+    background: #ecf0f3; 
+  }
+  .dashboard-body{
+    margin-left: 60px;
+    width: calc(100% - 60px);
+  }
+  .nav-li{
+      margin: 0px;
+      text-align: center;
+      width: 100%;
+  }
+  .nav-link{
+      padding: 10px 0px;
+      display: block;
+  }
+
+}
+@media only screen and (max-width: 900px) {
+    .dashboard-container{
+        padding: 0px;
+    }
 }
